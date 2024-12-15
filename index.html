@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Календарь смен</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="workers">
+		<div class="worker">
+			<label for="worker1">Смена №1</label>
+			<input data-shift-index="0" placeholder="Света и Света" type="text" id="worker1">
+		</div>
+		<div class="worker">
+			<label for="worker2">Смена №2</label>
+			<input data-shift-index="1" placeholder="Галя и Коля" type="text" id="worker2">
+		</div>
+		<div class="worker">
+			<label for="worker3">Смена №3</label>
+			<input data-shift-index="2" placeholder="Леся и Аня" type="text" id="worker3">
+		</div>
+		<div class="worker">
+			<label for="worker4">Смена №4</label>
+			<input data-shift-index="3" placeholder="Таня и Таня" type="text" id="worker4">
+		</div>
+	</div>
+
+	<h1>Календарь смен на 
+		<select name="year">
+			<option value="2024">2024</option>
+			<option selected value="2025">2025</option>
+			<option value="2026">2026</option>
+		</select> год
+	</h1>
+	<div class="calendar" id="calendar"></div>
+
+	<script src="script.js"></script>
+
+
+</body>
+
+</html>
